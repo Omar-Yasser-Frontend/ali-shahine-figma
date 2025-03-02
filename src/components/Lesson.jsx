@@ -21,10 +21,12 @@ function Lesson({ mins, lesson, question }) {
         </div>
         <div>
           {mins ? (
-            <>
-              <span>{question} Questoins</span>
-              <span>{mins} Minutes</span>
-            </>
+            <div className="flex flex-wrap gap-1">
+              <span className="p-1 bg-red-200 rounded-md">
+                {question} Questoins
+              </span>
+              <span className="p-1 bg-blue-200 rounded-md">{mins} Minutes</span>
+            </div>
           ) : (
             <BsLock />
           )}
