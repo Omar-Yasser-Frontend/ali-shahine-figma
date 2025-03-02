@@ -10,7 +10,7 @@ function Video() {
     <div className="col-span-4 relative">
       <video
         controls
-        src="/public/0218.mp4"
+        src="/0218.mp4"
         className="lg:w-full aspect-video top-0 left-0 z-50 lg:relative"
       ></video>
       <ul className="flex gap-3 mt-4">
