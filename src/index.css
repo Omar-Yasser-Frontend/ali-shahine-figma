@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: spartan;
+  src: url("/League_Spartan/LeagueSpartan-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: outfit;
+  src: url("/Outfit/Outfit-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: roboto;
+  src: url("/Roboto/Roboto-VariableFont_wdth\,wght.ttf");
+}
+
+body {
+  font-family: spartan, outfit, roboto, sans-serif;
+}
+
+@theme {
+  --color-light-blue: #f5f9fa;
+  --color-light-gray: #e6e6e6;
+  --color-greem: #6abd8a;
+}
+
+.label {
+  content: "";
+  right: 0;
+  transform: translateX(50%);
+  position: absolute;
+  bottom: calc(100% + 17px);
+  width: 32px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid #e6e6e6;
+  font-size: 11px;
+  user-select: none;
+}
+
+.label::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 4px);
+  border-width: 4px;
+  border-style: solid;
+  border-color: #e6e6e6 transparent transparent transparent;
+}
+
+.percentage {
+  content: "";
+  right: 0;
+  transform: translateX(50%);
+  position: absolute;
+  width: 32px;
+  font-size: 11px;
+  user-select: none;
+  top: calc(100% + 17px);
+}
+
+.content-weeks li {
+  border-top: 1px solid #e6e6e6;
+}
+
+.content-weeks li:last-child {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.head-responsive {
+  font-size: clamp(15px, 5vw, 27px);
+}
+
+.active {
+  background: white;
+}
+
+input[type="checkbox"]:checked + span span {
+  display: block;
+}
