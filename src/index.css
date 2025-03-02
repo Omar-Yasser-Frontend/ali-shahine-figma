@@ -77,3 +77,7 @@ body {
 input[type="checkbox"]:checked + span span {
   display: block;
 }
+
+label:has(input[type="checkbox"]:checked) {
+  background: #1a75ff;
+}
